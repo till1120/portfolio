@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<script>
+//////////////////////////////////////////////////////////////////////
+//
+//	 Title			：3Dまるばつゲーム
+//	 Filename		：portfolio1_marubatsu.html
+//	 Abstract		：まるばつゲームを3D化したもの
+//
+//////////////////////////////////////////////////////////////////////
+</script>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/table.css">
+	<script src="js/three.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/three@0.137.4/examples/js/controls/OrbitControls.js"></script>
+	<title>3Dマルバツゲーム</title>
+</head>
+<body>
+    <div id="pagebody">
+        <!-- ヘッダー＆メインメニュー -->
+        <ul id="menu">
+            <li><h2><a href="index.html">ポートフォリオ<br>home</a></h1></li>
+            <li><h2><a href="index.html#skill_overview">スキル概要<br>(できること)</a></h2></li>
+            <li><h1><a class="this_page" href="portfolio1_marubatsu.html">3Dマルバツゲーム<br>(JavaScript,three.js)</a></h2></li>
+            <li><h2><a href="portfolio2_AI_illust.html">AIイラスト<br>(Stable Diffusion)</a></h2></li>
+            <li><h2><a href="">シューティングゲーム<br>(C++,DirectX)</a></h2></li>
+            <li><h2><a href="">3Dアクションゲーム<br>(C++,DirectX)</a></h2></li>
+            <li><h2><a href="">天下一料理審査会<br>(PHP)</a></h2></li>
+            <li><h2><a href="">ポートフォリオ６</a></h2></li>
+            <hr>
+        </ul>
+        <!-- メインコンテンツ -->
+        <h3 id="marubatsu_h3">・3Dマルバツゲーム</h3>
+        <div id="marubatsu_game">
+			<button id="audio">音楽再生▶</button>
+			<p id="state">ゲームの状態を表示する予定</p>
+			<canvas id="draw3D">
+				<script>
+					//ゲーム実行
+					play_game()
+				</script>
+			</canvas>	
+            <table class="default">
+                <tr>
+                    <th>
+                        使用言語
+                    </th>
+                    <td>
+                        HTML・CSS・JavaScript
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        使用ライブラリ
+                    </th>
+                    <td>
+                        Three.js（3D描画に特化した商用利用可能なJavaScriptライブラリ）
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        制作期間
+                    </th>
+                    <td>
+                        1週間+休憩時間や昼休み時間
+                    </td>
+                </tr>
+                <th>
+                    開発経緯
+                </th>
+                <td>
+                    求職者支援訓練でJavaScriptプログラミング演習終了時の課題で制作しました。<br>
+                    制作期間が1週間と短めだったので、簡単そうなマルバツゲームを作ろうと考えました。<br>
+                    <br>
+                    3Dについては、昔C++とDirectX（3D描画に利用したライブラリ）で3Dゲームを制作したことがあり、3Dに関する基本的な知識（三次元座標、レンダリング等）はありました。<br>
+                    JavaScriptにも3D描画用のライブラリがあるだろうと検索したところ、3Dを簡単に描画できる「Three.js」が見つかりました。<br>
+                    <br>
+                    マルバツゲームに必要な基本要素（先手と後手が交互に置く、1列揃ったら勝ち等）と最低限の3D表示を早めに完成させてから、追加で機能を実装する方針で作業を進めました。<br>
+                    ◯と☓を回転させる、赤と緑の光源がグルグル回っている、影を付ける、マウスが乗っているマスを光らせる、カメラを動かす、音楽（musicとSE）再生ボタン設置、勝負終了後の再戦処理まで実装したところで期限が来ました。<br>
+                    プレイヤーvsAI（難易度3段階選択）まで実装したかったです。<br>
+                    <br>
+                    作業中に苦労したのは、「HTMLのcanvasタグの座標」と「3D上の座標」を関連付けすることでした。<br>
+                    canvasタグの左上の座標が「X:0,Y:0」なのに対し、Three.jsではcanvasの中心が「X:0,Z:0」（2次元上でのY軸）だったので、つじつま合わせが大変でした。
+                </td>
+            </table>
+		</div>
+
+	</div>
+    <!-- フッタ -->
+    <div id="footer">
+        <small>Copyright (c) 佐々木　友紀 All Rights Reserved.</small>
+    </div>
+</body>
+</html>

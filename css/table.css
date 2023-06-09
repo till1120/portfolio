@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*============================================
+テーブル
+============================================*/
+/*-----------------
+table.default
+角を丸める
+-----------------*/
+table.default
+{
+	width:99.5%;
+	margin: 0 auto;
+    border-radius: 8px;
+}
+
+/*-----------------
+table.default th
+セル内の改行禁止
+角を丸める
+-----------------*/
+table.default th
+{
+	width:24%;
+	text-align:center;
+	white-space:nowrap;
+    background-color: #44909b;
+    border-radius: 8px;
+    color:#d6d6d6;
+}
+
+/*-----------------
+table.default td
+角を丸める
+-----------------*/
+table.default td
+{
+	padding: 1%;
+	background-color:#a6c6de;
+    border-radius: 8px;
+}

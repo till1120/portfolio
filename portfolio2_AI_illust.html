@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/table.css">
+	<script src="js/three.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/three@0.137.4/examples/js/controls/OrbitControls.js"></script>
+	<title>AIイラスト（Stable diffusion）</title>
+</head>
+<body>
+    <div id="pagebody">
+        <!-- ヘッダー＆メインメニュー -->
+        <ul id="menu">
+            <li><h2><a href="index.html">ポートフォリオ<br>home</a></h1></li>
+            <li><h2><a href="index.html#skill_overview">スキル概要<br>(できること)</a></h2></li>
+            <li><h2><a href="portfolio1_marubatsu.html">3Dマルバツゲーム<br>(JavaScript,three.js)</a></h2></li>
+            <li><h1><a class="this_page" href="portfolio2_AI_illust.html">AIイラスト<br>(Stable Diffusion)</a></h2></li>
+            <li><h2><a href="">シューティングゲーム<br>(C++,DirectX)</a></h2></li>
+            <li><h2><a href="">3Dアクションゲーム<br>(C++,DirectX)</a></h2></li>
+            <li><h2><a href="">天下一料理審査会<br>(PHP)</a></h2></li>
+            <li><h2><a href=""></a></h2></li>
+            <hr>
+        </ul>
+        <!-- メインコンテンツ -->
+            <div id="AI_illust">
+            <h3>・AIイラスト（Stable diffusion）</h3>        
+            <table class="default">
+                <tr>
+                    <th>
+                        使用ソフト
+                    </th>
+                    <td>
+                        Stable Diffusion
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        使用モデル、拡張機能
+                    </th>
+                    <td>
+                        OrangeMix3、Pixelization等
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        経験
+                    </th>
+                    <td>
+                        個人学習2ヶ月
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        コメント
+                    </th>
+                    <td>
+                        依頼されて生成した画像を紹介していきます。<br>
+                        ↓↓↓
+                    </td>
+                </tr>
+            </table>
+            <h4>・ちびキャラ画像のドット化と表情差分</h4>
+            <table class="default">
+                <tr>
+                    <th>
+                        依頼人
+                    </th>
+                    <td>
+                        求職者支援訓練の同じコースに通っている友人<br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        依頼内容
+                    </th>
+                    <td>
+                        JavaScriptの使い方を教えてくれる解説君？的なキャラ。<br>
+                        ドット絵のキャラ。<br>
+                        小さい画像（50*50ドット ~ 200*200ドット）。<br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        使用モデル、拡張機能
+                    </th>
+                    <td>
+                        OrangeMix3、derita、Pixelization等
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        プロンプト
+                    </th>
+                    <td>
+                        best quality,detailed,beautiful,a boy,teacher,chibi anime,full body shot,black background
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        ネガティブプロンプト
+                    </th>
+                    <td>
+                        nsfw, (worst quality, low quality:1.4), (lip, nose, tooth, rouge, lipstick, eyeshadow:1.4), (blush:1.2), (jpeg artifacts:1.4), (depth of field, bokeh, blurry, film grain, chromatic aberration, lens flare:1.0), (1boy, abs, muscular, rib:1.0), greyscale, monochrome, dusty sunbeams, trembling, motion lines, motion blur, emphasis lines, text, title, logo, signature
+                    </td>
+                </tr>
+            </table>
+            <div id="AI_illust_chibi_chara">
+                <p>まずはプロンプトを指定して画像作成</p>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi01.png" alt="Stable Diffusionで生成したちびキャラ1">
+                    <p>ちびキャラ1</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi02.png" alt="Stable Diffusionで生成したちびキャラ2">
+                    <p>ちびキャラ2</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi03.png" alt="Stable Diffusionで生成したちびキャラ3">
+                    <p>ちびキャラ3</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi04.png" alt="Stable Diffusionで生成したちびキャラ4">
+                    <p>ちびキャラ4</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi05.png" alt="Stable Diffusionで生成したちびキャラ5">
+                    <p>ちびキャラ5</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi06.png" alt="Stable Diffusionで生成したちびキャラ6">
+                    <p>ちびキャラ6</p>
+                </div>
+            </div>
+            <p>↓↓↓</p>
+            <div id="AI_illust_chibi_chara">
+                <p>拡張機能「Pixelization」を使用してドット化</p>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_01.png" alt="Stable Diffusionで生成したちびキャラドット化1">
+                    <p>ちびキャラドット化1</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_02.png" alt="Stable Diffusionで生成したちびキャラドット化2">
+                    <p>ちびキャラドット化2</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_03.png" alt="Stable Diffusionで生成したちびキャラドット化3">
+                    <p>ちびキャラドット化3</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_04.png" alt="Stable Diffusionで生成したちびキャラドット化4">
+                    <p>ちびキャラドット化4</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_05.png" alt="Stable Diffusionで生成したちびキャラドット化5">
+                    <p>ちびキャラドット化5</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_06.png" alt="Stable Diffusionで生成したちびキャラドット化6">
+                    <p>ちびキャラドット化6</p>
+                </div>
+            </div>
+            <p>↓↓↓</p>
+            <div id="AI_illust_chibi_chara">
+                <p>ハチ女？が気に入ったとのことで表情差分</p>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_diff_01.png" alt="Stable Diffusionで生成したちびキャラドット差分、無表情">
+                    <p>無表情</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_diff_02.png" alt="Stable Diffusionで生成したちびキャラドット差分、笑顔">
+                    <p>笑顔(^o^)</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_diff_03.png" alt="Stable Diffusionで生成したちびキャラドット差分、悲しい">
+                    <p>悲しい(´・ω・｀)</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_diff_04.png" alt="Stable Diffusionで生成したちびキャラドット差分、照れ">
+                    <p>ちょっと照れる(//∇//)</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_diff_05.png" alt="Stable Diffusionで生成したちびキャラドット差分、怒る">
+                    <p>ぷち怒る٩(๑`^´๑)۶</p>
+                </div>
+                <div id="AI_illust_chibi_chara_image">
+                    <img src="media/image/02_AI_illust_chibi_dot_diff_06.png" alt="Stable Diffusionで生成したちびキャラドット差分、寝る">
+                    <p>寝る(つ∀-)</p>
+                </div>
+            </div>
+            <h4>・RPGの敵キャラ</h4>
+            <table class="default">
+                <tr>
+                    <th>
+                        依頼人
+                    </th>
+                    <td>
+                        求職者支援訓練の同じコースに通っている友人２<br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        依頼内容
+                    </th>
+                    <td>
+                        原文そのまま<br>
+                        --------------------<br>
+                        ＞サイズ<br>
+                        720（横）×480（縦）<br>
+                        ＞モンスター概要<br>
+                        1. HP：30、ザコ、スライム系<br>
+                        2. HP：50、ザコ2、狼系<br>
+                        3. HP：80、ザコ3、ゴーレム系<br>
+                        4. HP：100、ザコ4、悪魔系<br>
+                        5. HP：120、ボス、機械系<br>
+                        --------------------<br>
+                        さらに口頭で質問した結果<br>
+                        ・洞窟で遭遇<br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        使用モデル
+                    </th>
+                    <td>
+                        OrangeMix3、derita等
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        プロンプト
+                    </th>
+                    <td>
+                        best quality,detailed,beautiful,a boy,teacher,chibi anime,full body shot,black background
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        ネガティブプロンプト
+                    </th>
+                    <td>
+                        nsfw, (worst quality, low quality:1.4), (lip, nose, tooth, rouge, lipstick, eyeshadow:1.4), (blush:1.2), (jpeg artifacts:1.4), (depth of field, bokeh, blurry, film grain, chromatic aberration, lens flare:1.0), (1boy, abs, muscular, rib:1.0), greyscale, monochrome, dusty sunbeams, trembling, motion lines, motion blur, emphasis lines, text, title, logo, signature
+                    </td>
+                </tr>
+            </table>
+            <div id="AI_illust_monster">
+                <img src="media/image/02_AI_illust01.png" alt="マルバツゲームの画面">
+                <p>スライム</p>
+                <img src="media/image/02_AI_illust02.png" alt="マルバツゲームの画面">
+                <p>リリィ</p>
+                <img src="media/image/02_AI_illust03.png" alt="マルバツゲームの画面">
+                <p>ロボ</p>
+            </div>
+        </div>    
+    </div>
+
+	</div>
+    <!-- フッタ -->
+    <div id="footer">
+        <small>Copyright (c) 佐々木　友紀 All Rights Reserved.</small>
+    </div>
+</body>
+</html>
