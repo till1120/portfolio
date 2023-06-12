@@ -39,3 +39,40 @@ table.default td
 	background-color:#a6c6de;
     border-radius: 8px;
 }
+
+/*-----------------
+table.marubatsu
+角を丸める
+-----------------*/
+table.marubatsu
+{
+	width:99.5%;
+	margin: 0 auto;
+    border-radius: 8px;
+}
+
+/*-----------------
+table.marubatsu th
+セル内の改行禁止
+角を丸める
+-----------------*/
+table.marubatsu th
+{
+	width:24%;
+	text-align:center;
+	white-space:nowrap;
+    background-color: #008080;
+    border-radius: 8px;
+    color:#f5f5f5;
+}
+
+/*-----------------
+table.marubatsu td
+角を丸める
+-----------------*/
+table.marubatsu td
+{
+	padding: 1%;
+	background-color:#d8bfd8;
+    border-radius: 8px;
+}

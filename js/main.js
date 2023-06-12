@@ -90,7 +90,7 @@ const SE_VICTORY = 'media/audio/103_victory.wav';
 ///////////////////////////////////////////////////////////
 function play_game()
 {
-    //シン・マルバツゲーム実行
+    //マルバツゲーム実行
     let game = new MainGame();
 
     //デバッグモード
@@ -220,7 +220,6 @@ class MainGame
         this.music.muted = true;
         this.music.loop = true;
         this.music.controls = true;
-        //this.music.volume = 0.5;
         this.music_button = document.getElementById('audio');
         this.music_button.addEventListener('click', this.musicEvent.bind(this));
 
@@ -230,7 +229,6 @@ class MainGame
         this.sound_effect.muted = true;
         this.sound_effect.loop = false;
         this.sound_effect.controls = true;
-        //this.sound_effect.volume = 0.5;
     }
 
     ///////////////////////////////////////////////////////////
